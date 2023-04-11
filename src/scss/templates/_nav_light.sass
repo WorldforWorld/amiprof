@@ -1,0 +1,128 @@
+// Перенести в другой файл
+@media (max-width: 768px)
+	span
+		font-size: 20px
+@media (max-width: 767px)
+	body._lock
+		overflow: hidden
+// ---------------------------
+.container
+	max-width: 1180px
+	margin: 0 auto
+	padding: 0 10px
+// -------------------------------
+.header
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 50
+	// &::before
+	// 	content: ''
+	// 	position: absolute
+	// 	left: 0
+	// 	top: 0
+	// 	width: 100%
+	// 	height: 100%
+	// 	background-color: blue
+	// 	z-index: 2
+	&__body
+		position: relative
+		display: flex
+		justify-content: space-between
+		height: 80px
+		align-items: center
+		@media (max-width: 767px)
+			height: 50px
+	&__logo
+		position: relative
+		z-index: 3
+		flex: 0 0 192px
+		@media (max-width: 767px)
+			flex: 0 0 40px
+		& img
+			max-width: 100%
+			display: block
+	&__burger
+		display: none
+		&.active
+			& span
+				transform: scale(0)
+			&:before
+				transform: rotate(45deg)
+				top: 9px
+			&:after
+				transform: rotate(-45deg)
+				bottom: 9px
+		& span
+			position: absolute
+			background-color: #fff
+			left: 0
+			top: 9px
+			width: 100%
+			height: 2px
+			transition: all 0.3s ease 0s
+		&:before,
+		&:after
+			content: ''
+			background-color: #ffffff
+			position: absolute
+			width: 100%
+			height: 2px
+			left: 0
+			transition: all 0.3s ease 0s
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+		@media (max-width: 767px)
+			position: relative
+			z-index: 3
+			display: block
+			position: relative
+			width: 30px
+			height: 20px
+// ---------------------------------------
+.nav
+	&__menu
+		@media (max-width: 767px)
+			position: fixed
+			top: -120%
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: antiquewhite
+			padding: 70px 10px 20px 10px
+			transition: all 0.3s ease 0s
+			overflow: auto
+			&.active
+				top: 0
+	&__list
+		display: flex
+		position: relative
+		z-index: 2
+		padding-left: 0
+		@media (max-width: 767px)
+			display: block
+		& li
+			list-style: none
+			margin: 0 0 0 20px
+			@media (max-width: 767px)
+				margin: 0 0 20px 0
+	&__link
+		color: #2D2D2D
+		font-size: 18px
+		text-decoration: none
+		@media (max-width: 767px)
+			font-size: 24px
+
+// ------------------------------------------ Временнные стили
+.content
+	padding-top: 100px
+	@media (max-width: 767px)
+		padding-top: 70px
+	&__text
+		font-size: 18px
+		line-height: 25px
+		& p
+			margin-bottom: 20px
