@@ -1,17 +1,20 @@
+@import "templates/reset";
+@import "variables";
+@import "fonts";
 @import "settings";
 @import "templates/header";
 @import "templates/nav_light";
+@import "templates/contacts_list";
+@import "templates/services";
 @import "templates/main";
-@import "templates/reset";
-@import "fonts";
 * {
 	box-sizing: border-box;
 }
 body {
-  // background-color: #000;
-  font-family: Arial, Helvetica, sans-serif;
-  span {
-    color: red;
-  }
+  font-family: 'Roboto', sans-serif;
+	color: $text-primary;
+	a {
+		color: $text-primary;
+	}
   // background: url('@img/cover.jpg') 0 0 no-repeat;
 }

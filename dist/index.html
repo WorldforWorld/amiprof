@@ -1,84 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/img/favicon/favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="assets/css/style.min.css">
-  <title>Главная</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/img/favicon/favicon.svg">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+	<title>Главная</title>
 </head>
 
 <body>
 	<header class="header">
-  <div class="container header__container">
-    <div class="header__body">
+	<div class="container header__container">
+		<div class="header__body">
+
 	<a href="#" class="header__logo">
 		<img src="assets/img/logo.svg" alt="logo">
 	</a>
+
 	<nav class="nav__menu">
 		<ul class="nav__list">
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">О нас</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Услуги</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Новости</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Акции</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Документы</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Отзывы</a>
 			</li>
-			<li>
+			<li class="nav__item open">
 				<a href="#" class="nav__link">Контакты</a>
+			</li>
+			<li class="dd_menu" style="display: none;">
+				<a class="dropdown-toggle" type="button">...</a>
+				<ul class="dropdown-menu">
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">О нас</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Услуги</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Новости</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Акции</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Документы</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Отзывы</a>
+					</li>
+					<li class="nav__item" style="display: none;">
+						<a href="#" class="nav__link">Контакты</a>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</nav>
+
+	<div class="contacts__wrap icon-phone d-flex flex-column">
+	<span class="mdi mdi-chevron-down"></span>
+	<a class="text-decoration-none" href="tel:+73517778070">+7 (351) 777-80-70</a>
+	<ul class="contacts__list">
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+		<li class="contacts__list__item"><a class="text-decoration-none" href="tel:+73518889181">+7 (351) 888-91-81</a></li>
+	</ul>
+	<a class="call__btn" href="#">Заказать звонок</a>
+</div>
+
 	<div class="header__burger">
 		<span></span>
 	</div>
+
 </div>
-<!-- Временный блок -->
-<!-- <div class="content">
-  <div class="container">
-    <div class="content__text">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas hic doloremque placeat porro delectus rem tempore libero facere autem aspernatur, molestiae, cupiditate debitis cumque ad architecto maiores adipisci vitae veritatis sunt consequatur. Numquam, molestias maiores. Harum perspiciatis architecto, labore, ipsa recusandae debitis cupiditate magnam laboriosam libero voluptate porro maxime? Dignissimos saepe hic reprehenderit explicabo ex iusto, ea cum magni officiis, perferendis praesentium enim nihil modi cupiditate illo doloribus provident molestias placeat eius perspiciatis nisi accusantium libero recusandae quidem. Fugiat saepe repellat dolor ipsam nulla iste eligendi possimus velit perspiciatis rem ipsum voluptas laborum nihil, quia corporis officiis. Neque sunt dolore consectetur minus obcaecati qui repellendus ullam perferendis aspernatur accusamus tempore illo natus fugiat saepe, aperiam quam mollitia at, veniam architecto facere, voluptatum fugit aut reiciendis ea? Temporibus, impedit fugiat? Debitis accusamus itaque nemo tempore provident laboriosam explicabo in quod blanditiis quasi voluptas voluptates eum velit, laudantium illum aperiam ad cum tempora id expedita commodi non suscipit. Porro quos animi sint, modi nihil iste consectetur? Deleniti accusantium, labore deserunt quasi facilis ab dolore neque aut, explicabo eaque iste veniam veritatis ipsam iure dolor magnam tenetur vero nisi cupiditate in aliquam esse nostrum provident porro? Molestiae enim, corporis odit velit harum distinctio ex, eum at fugit quam ad unde eius. Facere deserunt perspiciatis quisquam eius nulla asperiores omnis mollitia sapiente amet aliquam non officia, earum doloremque numquam illo tenetur laborum? Sed quisquam facilis aut ea animi rem reiciendis excepturi illum quis, aliquid eveniet assumenda harum? Architecto consequuntur saepe possimus. Ab eius quos eaque ut nulla possimus. Porro neque fuga corrupti, sunt itaque consequatur eligendi explicabo facere iure dolores pariatur id ratione earum aut ad possimus, provident error dicta. Enim iusto assumenda ducimus sint aut quis nisi saepe laudantium suscipit perspiciatis deserunt ipsa, consectetur ea similique. Minima, aliquam corporis iusto culpa rerum facilis iure vero temporibus sed dolor ex minus vel unde libero quas officiis itaque magnam nesciunt dolorem repellendus pariatur. Distinctio, adipisci cupiditate. Corrupti suscipit officiis dicta iure dignissimos, ad repellat veniam! Veritatis quis accusantium vitae eum, repellendus iste minima quaerat et excepturi delectus adipisci, animi sit quae omnis quos perferendis inventore officiis expedita sequi labore amet. Sunt possimus ullam autem quisquam et aspernatur soluta facere ex, rem sint inventore recusandae. Non expedita maiores autem a officiis vel laboriosam suscipit corrupti dolor sint fugiat placeat molestiae, cupiditate, repellendus aliquid voluptates rem voluptatem ab? Tenetur libero sapiente ab quia nobis nemo, error praesentium explicabo reiciendis sed minus atque? Amet animi quia doloremque, ab quaerat quam laborum hic libero et id facilis sunt nam deserunt ex esse. Fugit animi magnam quas labore, quo repellendus ea nam, rem tenetur ab pariatur voluptatum dicta, in mollitia. Voluptatum vitae eius fugit numquam recusandae illum aut dolor, in nulla facere quod beatae alias veritatis, adipisci optio. Non nihil incidunt, dignissimos quas doloremque et quasi, omnis explicabo repellendus labore deleniti placeat voluptas excepturi voluptates rerum ipsam nulla iste voluptatem maiores corrupti. Similique suscipit hic quidem id quasi minus, nam saepe delectus illum eaque. Perferendis hic cupiditate facere maxime!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas hic doloremque placeat porro delectus rem tempore libero facere autem aspernatur, molestiae, cupiditate debitis cumque ad architecto maiores adipisci vitae veritatis sunt consequatur. Numquam, molestias maiores. Harum perspiciatis architecto, labore, ipsa recusandae debitis cupiditate magnam laboriosam libero voluptate porro maxime? Dignissimos saepe hic reprehenderit explicabo ex iusto, ea cum magni officiis, perferendis praesentium enim nihil modi cupiditate illo doloribus provident molestias placeat eius perspiciatis nisi accusantium libero recusandae quidem. Fugiat saepe repellat dolor ipsam nulla iste eligendi possimus velit perspiciatis rem ipsum voluptas laborum nihil, quia corporis officiis. Neque sunt dolore consectetur minus obcaecati qui repellendus ullam perferendis aspernatur accusamus tempore illo natus fugiat saepe, aperiam quam mollitia at, veniam architecto facere, voluptatum fugit aut reiciendis ea? Temporibus, impedit fugiat? Debitis accusamus itaque nemo tempore provident laboriosam explicabo in quod blanditiis quasi voluptas voluptates eum velit, laudantium illum aperiam ad cum tempora id expedita commodi non suscipit. Porro quos animi sint, modi nihil iste consectetur? Deleniti accusantium, labore deserunt quasi facilis ab dolore neque aut, explicabo eaque iste veniam veritatis ipsam iure dolor magnam tenetur vero nisi cupiditate in aliquam esse nostrum provident porro? Molestiae enim, corporis odit velit harum distinctio ex, eum at fugit quam ad unde eius. Facere deserunt perspiciatis quisquam eius nulla asperiores omnis mollitia sapiente amet aliquam non officia, earum doloremque numquam illo tenetur laborum? Sed quisquam facilis aut ea animi rem reiciendis excepturi illum quis, aliquid eveniet assumenda harum? Architecto consequuntur saepe possimus. Ab eius quos eaque ut nulla possimus. Porro neque fuga corrupti, sunt itaque consequatur eligendi explicabo facere iure dolores pariatur id ratione earum aut ad possimus, provident error dicta. Enim iusto assumenda ducimus sint aut quis nisi saepe laudantium suscipit perspiciatis deserunt ipsa, consectetur ea similique. Minima, aliquam corporis iusto culpa rerum facilis iure vero temporibus sed dolor ex minus vel unde libero quas officiis itaque magnam nesciunt dolorem repellendus pariatur. Distinctio, adipisci cupiditate. Corrupti suscipit officiis dicta iure dignissimos, ad repellat veniam! Veritatis quis accusantium vitae eum, repellendus iste minima quaerat et excepturi delectus adipisci, animi sit quae omnis quos perferendis inventore officiis expedita sequi labore amet. Sunt possimus ullam autem quisquam et aspernatur soluta facere ex, rem sint inventore recusandae. Non expedita maiores autem a officiis vel laboriosam suscipit corrupti dolor sint fugiat placeat molestiae, cupiditate, repellendus aliquid voluptates rem voluptatem ab? Tenetur libero sapiente ab quia nobis nemo, error praesentium explicabo reiciendis sed minus atque? Amet animi quia doloremque, ab quaerat quam laborum hic libero et id facilis sunt nam deserunt ex esse. Fugit animi magnam quas labore, quo repellendus ea nam, rem tenetur ab pariatur voluptatum dicta, in mollitia. Voluptatum vitae eius fugit numquam recusandae illum aut dolor, in nulla facere quod beatae alias veritatis, adipisci optio. Non nihil incidunt, dignissimos quas doloremque et quasi, omnis explicabo repellendus labore deleniti placeat voluptas excepturi voluptates rerum ipsam nulla iste voluptatem maiores corrupti. Similique suscipit hic quidem id quasi minus, nam saepe delectus illum eaque. Perferendis hic cupiditate facere maxime!
-      </p>
-    </div>
-  </div>
-</div> -->
-    
-    
-  </div>
+	</div>
 </header>
 	<main>
-		<section class="main">
+		<section class="main d-flex align-center" style="background-image: url('assets/img/bg-main.jpg'); background-color: #ffdda7">
 	<div class="container">
 		<div class="row d-flex align-center">
-			<h1 class="main-h1">охрана труда <br>
-				пожарная<br>
-				безопасность <br>
-				обучение сотрудников</h1>
-			<img class="main-img" src="assets/img/bg-main.jpg" alt="">
+			<h1 class="main-h1 text-uppercase">
+				охрана труда <br />
+				пожарная безопасность <br />
+				обучение сотрудников
+			</h1>
 		</div>
+	</div>
+</section>
+		<section class="py-17">
+	<div class="container">
+		<h2 class="text-h2 text-center text-uppercase">наши услуги</h2>
+		<div class="row">
+			<div class="services__item d-flex gap-8 justify-space-between flex-sm-column align-sm-center ">
+	<div class="services__preview">
+		<img src="assets/img/services-1.svg" alt="services">
+	</div>
+	<div class="services__content mt-19 mt-sm">
+		<h3 class="services__title text-h3 text-uppercase">Промышленная безопасность</h3>
+		<span class="services__desc text-subtitle-1">
+			Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды объектов.
+		</span>
+		<a href="#" class="btn ml-auto mt-9">показать больше</a>
+	</div>
+	
+</div>
+			<div class="services__item d-flex gap-8 justify-space-between flex-sm-column align-sm-center row-reverse">
+	<div class="services__preview">
+		<img src="assets/img/services-2.svg" alt="services">
+	</div>
+	<div class="services__content mt-19 mt-sm">
+		<h3 class="services__title text-h3 text-uppercase">охрана труда</h3>
+		<span class="services__desc text-subtitle-1">
+			Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды объектов.
+		</span>
+		<a href="#" class="btn ml-auto mt-9">показать больше</a>
+	</div>
+	
+</div>
+			<div class="services__item d-flex gap-8 justify-space-between flex-sm-column align-sm-center ">
+	<div class="services__preview">
+		<img src="assets/img/services-3.svg" alt="services">
+	</div>
+	<div class="services__content mt-19 mt-sm">
+		<h3 class="services__title text-h3 text-uppercase">обучение рабочих</h3>
+		<span class="services__desc text-subtitle-1">
+			Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды объектов.
+		</span>
+		<a href="#" class="btn ml-auto mt-9">показать больше</a>
+	</div>
+	
+</div>
+			<div class="services__item d-flex gap-8 justify-space-between flex-sm-column align-sm-center row-reverse">
+	<div class="services__preview">
+		<img src="assets/img/services-4.svg" alt="services">
+	</div>
+	<div class="services__content mt-19 mt-sm">
+		<h3 class="services__title text-h3 text-uppercase">Обучение лиц с ограниченными возможностями здоровья</h3>
+		<span class="services__desc text-subtitle-1">
+			Создаем и интегрируем актуальные системы безопасности, осуществляем полное сопровождение предприятий. Все услуги: от аудита до проектов «под ключ» и разработки документации на все виды объектов.
+		</span>
+		<a href="#" class="btn ml-auto mt-9">показать больше</a>
+	</div>
+	
+</div>
+
+		</div>
+	</div>
+</section>
+		<section class="bg-grey py-17">
+	<div class="container">
+		<h2 class="text-h2 text-center text-uppercase text-secondary">Отзывы клиентов</h2>
 	</div>
 </section>
 		<!-- <img src="assets/img/cover.jpg" alt=""> -->
 	</main>
-	<footer>Я подвал</footer>
+	
 	<script src="assets/js/app.min.js"></script>
 </body>
 

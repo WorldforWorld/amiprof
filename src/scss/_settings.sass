@@ -1,4 +1,80 @@
+// flex
 .d-flex
 	display: flex
-.align-center
-	align-items: center
+.row-reverse
+	flex-direction: row-reverse
+.flex
+	&-column
+		flex-direction: column
+	&-sm-column
+		@media ( max-width: 800px)
+			flex-direction: column
+.gap-8
+	gap: 32px
+// position
+.align
+	&-center
+		align-items: center
+	&-sm-center
+		@media ( max-width: 800px)
+			align-items: center
+.justify-space-between
+	justify-content: space-between
+.ml-auto
+	margin-left: auto
+.mt-9
+	margin-top: 36px
+.mt-19
+	margin-top: 76px
+.mt-sm
+	@media ( max-width: 800px)
+		margin-top: 0
+.py-17
+	padding: 68px 0
+// content
+.text-uppercase
+	text-transform: uppercase
+.text-decoration-none
+	text-decoration: none
+h2,h3
+	font-weight: 700
+	line-height: 120%
+.text-h2
+	font-size: 2.25rem
+.text-h3
+	font-size: 1.5rem
+.text-subtitle-1
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+.text-center
+	text-align: center
+// buttons
+.btn
+	display: block
+	width: fit-content
+	padding: 10px 26px
+	font-weight: 400
+	font-size: 14px
+	line-height: 120%
+	border: 1px solid $btn
+	border-radius: 5px
+	text-decoration: none
+	transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s
+	&:hover
+		background-color: $btn
+		color: $secondary
+// grid
+.container
+	width: 100%
+	max-width: 1230px
+	margin: 0 auto
+	padding: 0 15px
+// media
+img
+	max-width: 100%
+// colors
+.bg-grey
+	background-color: $grey
+.text-secondary
+	color: $secondary
