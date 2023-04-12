@@ -1,11 +1,13 @@
 @import "templates/reset";
 @import "variables";
+@import "owl_carousel";
 @import "fonts";
 @import "settings";
 @import "templates/header";
 @import "templates/nav_light";
 @import "templates/contacts_list";
 @import "templates/services";
+@import "templates/feedback";
 @import "templates/main";
 * {
 	box-sizing: border-box;

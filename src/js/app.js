@@ -1,11 +1,26 @@
 import * as flsFunctions from "./modules/functions.js";
 import * as navLightInit from "./modules/nav_light.js";
-
+import * as owlCarousel from "./modules/owl.carousel.js"
 document.addEventListener("DOMContentLoaded", function () {
   flsFunctions.isWebp();
 
   navLightInit.navLight();
-
+	document.querySelector('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
   // --------------------------------------------------------------
 
   // Получаем элементы меню и кнопку
