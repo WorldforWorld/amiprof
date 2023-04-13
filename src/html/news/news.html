@@ -1,0 +1,38 @@
+<section class="py-17 bg-left-50">
+	<div class="container">
+		<div class="row d-flex flex-wrap">
+			<div class="col-4 col-lg-2 col-xs-1 mt-4">
+				<h2 class="text-h2 text-uppercase mt-0 text-xs-center">рубрика<br>
+					важных<br>
+					новостей</h2>
+				<div class="news__img d-sx-none">
+					<img src="@img/news.svg" alt="news">
+				</div>
+			</div>
+			<div class="col-4 col-lg-2 col-xs-1 mt-4">
+				@@include('news_item.html', {
+				"title": "важная Новость",
+				"date": "12/2020",
+				"desc": "Очень много текста примерно на три строчки, ибо больше никто читать не будет."
+				})
+			</div>
+			<div class="col-4 col-lg-2 col-xs-1 mt-4">
+				@@include('news_item.html', {
+				"title": "важная Новость",
+				"date": "12/2020",
+				"desc": "Очень много текста примерно на три строчки, ибо больше никто читать не будет."
+				})
+			</div>
+			<div class="col-4 col-lg-2 col-xs-1 mt-4">
+				@@include('news_item.html', {
+				"title": "важная Новость",
+				"date": "12/2020",
+				"desc": "Очень много текста примерно на три строчки, ибо больше никто читать не будет."
+				})
+				<a href="#" class="btn-arrow text-uppercase text-decoration-none ml-auto mt-13 d-flex justify-end">все
+					новости</a>
+			</div>
+		</div>
+
+	</div>
+</section>

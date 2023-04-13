@@ -1,0 +1,27 @@
+.slider
+	max-width: 820px
+	.swiper-slide
+		img
+			width: inherit
+	.swiper-button-prev,
+	.swiper-button-next
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 34px
+		height: 34px
+		background-color: $btn
+		border: 1px solid $btn
+		cursor: pointer
+		transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out
+		&::before
+			font-size: 32px
+		&:hover
+			color: $btn
+			background-color: transparent
+	.swiper-button-disabled
+		background-color: $btn-disabled
+		border: 1px solid $btn-disabled
+		pointer-events: none
+		&:hover
+			pointer-events: none

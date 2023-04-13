@@ -1,6 +1,7 @@
 @import "templates/reset";
 @import "variables";
-@import "owl_carousel";
+@import '../../node_modules/swiper/swiper';
+@import "templates/slider";
 @import "fonts";
 @import "settings";
 @import "templates/header";
@@ -9,6 +10,11 @@
 @import "templates/services";
 @import "templates/feedback";
 @import "templates/main";
+@import "templates/projects";
+@import "templates/news";
+@import "templates/questions";
+@import "templates/articles";
+@import "templates/clients";
 * {
 	box-sizing: border-box;
 }

@@ -1,0 +1,21 @@
+<section class="py-17">
+	<div class="container">
+		<h2 class="text-uppercase text-h2 mb-24 mt-2">проекты</h2>
+		<div class="row">
+			@@include('projects_item.html', {
+			"title": "название проекта 1",
+			"date": "12/2020",
+			"img": "null",
+			"desc": "Очень много текста примерно на три строчки, ибо больше никто читать не будет."
+			})
+			@@include('projects_item.html', {
+			"title": "название проекта 2",
+			"date": "12/2020",
+			"img": "@img/project.jpg",
+			"desc": "Очень много текста примерно на три строчки, ибо больше никто читать не будет."
+			})
+			<a href="#" class="btn-arrow text-uppercase text-decoration-none ml-auto d-flex justify-end">все проекты<span
+					class="mdi mdi-chevron-right"></span></a>
+		</div>
+	</div>
+</section>
