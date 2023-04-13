@@ -769,6 +769,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   margin-bottom: 24px;
 }
 
+.mb-7 {
+  margin-bottom: 28px;
+}
+
 .mb-15 {
   margin-bottom: 60px;
 }
@@ -791,6 +795,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 
 .px-7 {
   padding: 0 28px;
+}
+
+.pb-14 {
+  padding-bottom: 56px;
 }
 
 .pt-7 {
@@ -856,6 +864,10 @@ h2, h3 {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .btn {
   display: block;
   width: fit-content;
@@ -918,8 +930,17 @@ h2, h3 {
   padding: 0 15px;
 }
 
+.col-3 {
+  flex: 0 0 33.333%;
+}
 .col-4 {
   flex: 0 0 25%;
+}
+.col-6 {
+  flex: 0 0 60%;
+}
+.col-7 {
+  flex: 0 0 70%;
 }
 @media (max-width: 992px) {
   .col-lg-2 {
@@ -1362,13 +1383,75 @@ img {
   font-size: 12px;
 }
 
+.clients__wrap {
+  border-top: 1px solid #F2F2F2;
+  border-left: 1px solid #F2F2F2;
+  grid-template-columns: repeat(auto-fit, minmax(299px, 1fr));
+}
 .clients__item {
   height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2;
 }
 
+.footer {
+  font-family: Montserrat, sans-serif;
+}
+.footer__nav-col {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.footer__nav-item a {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #777E89;
+}
+.footer__nav-item:first-child a {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.footer__contacts {
+  grid-template-columns: 1fr 1fr;
+}
+.footer__contacts .mdi::before {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search {
+  position: relative;
+}
+.search input {
+  width: 100%;
+  padding: 12px 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #DADADA;
+  background: #3E3E3D;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  outline: none;
+}
+.search__icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #BFBFBD;
+  font-size: 22px;
+  pointer-events: none;
+}
 * {
   box-sizing: border-box;
 }
