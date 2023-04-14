@@ -11,6 +11,9 @@
 			font-size: 14px
 			line-height: 27px
 			color: $footer
+			transition: color ease-in-out 0.2s
+			&:hover
+				color: $secondary
 		&:not(:last-child)
 			a
 				margin-bottom: 5px
@@ -20,17 +23,22 @@
 			font-size: 15px
 			line-height: 16px
 			color: $secondary
+			&:hover
+				color: $footer
 	&__contacts
 		grid-template-columns: 1fr 1fr
 		@media ( max-width: 512px )
 			grid-template-columns: 1fr
 			text-align: center
 		.mdi
+			transition: color ease-in-out 0.2s
 			@media ( max-width: 512px )
 				text-align: center
 			&::before
 				font-size: 16px
 				margin-right: 10px
+		a.mdi:hover
+			color: $btn
 	.copyright
 		font-weight: 400
 		font-size: 13px

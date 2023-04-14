@@ -6,6 +6,7 @@
 		@media (max-width: 520px)
 			display: none
 		.first-contact
+			transition: color ease-in-out 0.2s
 			&::before
 				position: absolute
 				right: -24px
@@ -13,8 +14,10 @@
 		&.active
 			.contacts__list
 				display: block
-			.first-contact::before
-				transform: rotate(180deg)
+			.first-contact
+				color: $secondary
+				&::before
+					transform: rotate(180deg)
 	&__list
 		position: absolute
 		top: 20px
@@ -28,5 +31,7 @@
 		border-bottom-right-radius: 5px
 		border-bottom-left-radius: 5px
 		&__item
+			a:hover
+				color: $btn
 			&:not(:last-child)
 				padding-bottom: 5px

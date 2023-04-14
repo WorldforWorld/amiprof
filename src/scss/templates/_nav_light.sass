@@ -30,6 +30,8 @@
 		position: relative
 		z-index: 3
 		flex: 0 0 192px
+		img
+			height: inherit
 		@media (max-width: 767px)
 			flex: 0 0 90px
 			height: 40px
@@ -114,8 +116,11 @@
 		font-size: 18px
 		text-decoration: none
 		white-space: nowrap
+		transition: color ease-in-out 0.2s
 		@media (max-width: 767px)
 			font-size: 24px
+		&:hover
+			color: $secondary
 
 // ------------------------------------------ Временнные стили
 .content
@@ -129,6 +134,11 @@
 			margin-bottom: 20px
 .dd_menu
 	position: relative
+	.dropdown-toggle
+		cursor: pointer
+		transition: color ease-in-out 0.2s
+		&:hover
+			color: $secondary
 	.dropdown-menu
 		display: none
 		position: absolute

@@ -949,10 +949,25 @@ h2, h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
+  transition: color ease-in-out 0.2s;
 }
 .btn-arrow span::before {
   color: #DC911B;
   font-size: 32px;
+}
+.btn-arrow:hover {
+  color: #DC911B;
+}
+.btn__call {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2D2D2D;
+  text-decoration: underline dotted;
+  transition: color ease-in-out 0.2s;
+}
+.btn__call:hover {
+  color: #FFFFFF;
 }
 
 .container {
@@ -1037,6 +1052,14 @@ img {
   background-color: #777E89;
 }
 
+.ivert {
+  filter: drop-shadow(0 0 0 0);
+  transition: filter ease-in-out 0.2s;
+}
+.ivert:hover {
+  filter: drop-shadow(0 0 20px #FFDDA7);
+}
+
 .header {
   transition: top ease-in-out 0.2s, background-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s, flex ease-in-out 0.2s;
 }
@@ -1045,8 +1068,18 @@ img {
   background-color: #FFFFFF;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+.header.scroll .btn__call:hover,
+.header.scroll .contacts__phone.active .first-contact {
+  color: #DC911B;
+}
 .header.scroll .header__logo {
   flex: 0 0 130px;
+}
+.header.scroll .dropdown-toggle:hover {
+  color: #DC911B;
+}
+.header.scroll .nav__link:hover {
+  color: #DC911B;
 }
 
 @media (max-width: 768px) {
@@ -1091,6 +1124,9 @@ img {
   position: relative;
   z-index: 3;
   flex: 0 0 192px;
+}
+.header__logo img {
+  height: inherit;
 }
 @media (max-width: 767px) {
   .header__logo {
@@ -1202,11 +1238,15 @@ img {
   font-size: 18px;
   text-decoration: none;
   white-space: nowrap;
+  transition: color ease-in-out 0.2s;
 }
 @media (max-width: 767px) {
   .nav__link {
     font-size: 24px;
   }
+}
+.nav__link:hover {
+  color: #FFFFFF;
 }
 
 .content {
@@ -1227,6 +1267,13 @@ img {
 
 .dd_menu {
   position: relative;
+}
+.dd_menu .dropdown-toggle {
+  cursor: pointer;
+  transition: color ease-in-out 0.2s;
+}
+.dd_menu .dropdown-toggle:hover {
+  color: #FFFFFF;
 }
 .dd_menu .dropdown-menu {
   display: none;
@@ -1258,12 +1305,18 @@ img {
     display: none;
   }
 }
+.contacts__wrap .first-contact {
+  transition: color ease-in-out 0.2s;
+}
 .contacts__wrap .first-contact::before {
   position: absolute;
   right: -24px;
 }
 .contacts__phone.active .contacts__list {
   display: block;
+}
+.contacts__phone.active .first-contact {
+  color: #FFFFFF;
 }
 .contacts__phone.active .first-contact::before {
   transform: rotate(180deg);
@@ -1280,6 +1333,9 @@ img {
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.contacts__list__item a:hover {
+  color: #DC911B;
 }
 .contacts__list__item:not(:last-child) {
   padding-bottom: 5px;
@@ -1320,6 +1376,10 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
+  transition: color ease-in-out 0.2s;
+}
+.feedback__btn:hover {
+  color: #DC911B;
 }
 
 .main {
@@ -1471,6 +1531,12 @@ img {
   border-bottom: 1px solid #F2F2F2;
   border-right: 1px solid #F2F2F2;
 }
+.clients__item img {
+  transition: filter ease-in-out 0.2s;
+}
+.clients__item:hover img {
+  filter: invert(50%);
+}
 
 .footer {
   font-family: Montserrat, sans-serif;
@@ -1486,6 +1552,10 @@ img {
   font-size: 14px;
   line-height: 27px;
   color: #777E89;
+  transition: color ease-in-out 0.2s;
+}
+.footer__nav-item a:hover {
+  color: #FFFFFF;
 }
 .footer__nav-item:not(:last-child) a {
   margin-bottom: 5px;
@@ -1497,6 +1567,9 @@ img {
   line-height: 16px;
   color: #FFFFFF;
 }
+.footer__nav-item:first-child a:hover {
+  color: #777E89;
+}
 .footer__contacts {
   grid-template-columns: 1fr 1fr;
 }
@@ -1506,6 +1579,9 @@ img {
     text-align: center;
   }
 }
+.footer__contacts .mdi {
+  transition: color ease-in-out 0.2s;
+}
 @media (max-width: 512px) {
   .footer__contacts .mdi {
     text-align: center;
@@ -1514,6 +1590,9 @@ img {
 .footer__contacts .mdi::before {
   font-size: 16px;
   margin-right: 10px;
+}
+.footer__contacts a.mdi:hover {
+  color: #DC911B;
 }
 .footer .copyright {
   font-weight: 400;
@@ -1536,6 +1615,13 @@ img {
   border: 1px solid #FFFFFF;
   border-radius: 3px;
   outline: none;
+  transition: border-color ease-in-out 0.2s;
+}
+.search input:hover {
+  border-color: #FFDDA7;
+}
+.search input:focus {
+  border-color: #DC911B;
 }
 .search__icon {
   position: absolute;
