@@ -70,5 +70,36 @@ export function navLight() {
 	}
 	addClassScroll()
 	window.addEventListener('scroll', addClassScroll);
+	// собираем все якоря; устанавливаем время анимации и количество кадров
+	const learnMoreLinks = document.querySelectorAll("a[href*='#']");
 
+	learnMoreLinks.forEach(link => {
+		link.addEventListener("click", (event) => {
+			event.preventDefault();
+			const id = event.target.getAttribute("href");
+			const section = document.querySelector(id);
+			const top = section.offsetTop;
+			const duration = 1000;
+			const start = window.pageYOffset;
+			const distance = top - start;
+			let startTime = null;
+
+			function animation(currentTime) {
+				if (startTime === null) startTime = currentTime;
+				const timeElapsed = currentTime - startTime;
+				const run = ease(timeElapsed, start, distance, duration);
+				window.scrollTo(0, run);
+				if (timeElapsed < duration) requestAnimationFrame(animation);
+			}
+
+			function ease(t, b, c, d) {
+				t /= d / 2;
+				if (t < 1) return c / 2 * t * t + b;
+				t--;
+				return -c / 2 * (t * (t - 2) - 1) + b;
+			}
+
+			requestAnimationFrame(animation);
+		});
+	});
 }
