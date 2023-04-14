@@ -7,11 +7,13 @@
 	&__nav-item
 		a
 			display: inline-block
-			margin-bottom: 5px
 			font-weight: 400
 			font-size: 14px
 			line-height: 27px
 			color: $footer
+		&:not(:last-child)
+			a
+				margin-bottom: 5px
 		&:first-child a
 			margin-bottom: 20px
 			font-weight: 700
@@ -20,7 +22,17 @@
 			color: $secondary
 	&__contacts
 		grid-template-columns: 1fr 1fr
+		@media ( max-width: 512px )
+			grid-template-columns: 1fr
+			text-align: center
 		.mdi
+			@media ( max-width: 512px )
+				text-align: center
 			&::before
 				font-size: 16px
 				margin-right: 10px
+	.copyright
+		font-weight: 400
+		font-size: 13px
+		line-height: 19px
+		color: #777E89
