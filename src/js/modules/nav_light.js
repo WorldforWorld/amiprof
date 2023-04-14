@@ -76,6 +76,9 @@ export function navLight() {
 	learnMoreLinks.forEach(link => {
 		link.addEventListener("click", (event) => {
 			event.preventDefault();
+			document.querySelector('.header__burger').classList.remove('active');
+			document.querySelector('.nav__menu').classList.remove('active');
+			document.querySelector('body').classList.remove('_lock');
 			const id = event.target.getAttribute("href");
 			const section = document.querySelector(id);
 			const top = section.offsetTop;
